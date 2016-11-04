@@ -6,8 +6,6 @@ import GroupBar from './group';
 import Shop from './shop';
 import Home from './home';
 
-export default {};
-
 export {
   HeaderBar,
   SiderBar,

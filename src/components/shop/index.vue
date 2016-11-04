@@ -1,17 +1,28 @@
 <template>
 	<div class="right_part" id="right_part">
-		<group-bar></group-bar>
+		<group-bar>
+      <items>
+        
+      </items>
+    </group-bar>
 
 	</div>
 </template>
 
 <script>
-  import { GroupBar, } from 'compon';
+  import GroupBar from '../group';
+  import items from '../items';
 
   export default {
     template: '#right_part',
     components: {
-      'group-bar':GroupBar
+      'group-bar': GroupBar,
+      'items': items
+    },
+    data() {
+      return {
+
+      }
     }
   }
 </script>

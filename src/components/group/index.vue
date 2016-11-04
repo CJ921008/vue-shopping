@@ -1,9 +1,5 @@
 <template>
-	<div class="group"></div>
+	<div class="group">
+		<slot></slot>
+	</div>
 </template>
-
-<script>
-  export default {
-  	
-  }
-</script>
