@@ -1,9 +1,10 @@
 <template>
 	<div class="right_part" id="right_part">
 		<group-bar>
-      <items>
-        
+      <items v-for="item in itemList" :itemTitle="item.itemTitle">
+        <i slot="icon">
       </items>
+      
     </group-bar>
 
 	</div>
@@ -21,7 +22,12 @@
     },
     data() {
       return {
-
+        itemList:[
+          {itemTitle:'添加商品'},
+          {itemTitle:'添加商品'},
+          {itemTitle:'添加商品'},
+          {itemTitle:'添加商品'}
+        ]
       }
     }
   }

@@ -1,11 +1,11 @@
 <template>
 	<div :class="itemClass">
-		<slot>
+		<slot name="icon">
 			<i :class="iconClass"></i>
 		</slot>
-		<slot>
+		</slot name="text">
 			<p v-text="itemTitle"></p>
-		</slot>
+		</div>
 	</div>
 </template>
 <script>
